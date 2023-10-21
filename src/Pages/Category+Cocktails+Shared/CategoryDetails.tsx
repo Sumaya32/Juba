@@ -37,7 +37,8 @@ const CategoryDetails = (props: CategoryDetailsProps) => {
     }
 
     useEffect(() => {
-        function1()
+        function1();
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     },[])
 
     return (

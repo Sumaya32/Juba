@@ -14,7 +14,8 @@ interface DetailProps {
 
 
 const Detail = (props: DetailProps) => {
-    const [_, setAppearance] = useState(true)
+    // eslint-disable-next-line
+    const [_, setAppearance] = useState(true);
     let { detailName } = useParams<ParamTypes>();
 
     let gevonden = props.cocktail.find(item => item.strDrink.replace(/[' ',-,%,/,.,&]/g, '').toLowerCase() === detailName.replace(/[' ',-,%,/,.,&]/g, '').toLowerCase())
