@@ -14,7 +14,6 @@ import CategoryDetails from "./Pages/Category+Cocktails+Shared/CategoryDetails";
 import Contact from "./Pages/Contact/Contact";
 import Favorites from "./Pages/Favorites/Favorites";
 
-
 export const ThemeContext = React.createContext({ callBackValue: "Niks is gevonden", callBackFunction: (param: string) => { } });
 
 
