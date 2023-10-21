@@ -16,12 +16,10 @@ import Favorites from "./Pages/Favorites/Favorites";
 
 export const ThemeContext = React.createContext({ callBackValue: "Niks is gevonden", callBackFunction: (param: string) => { } });
 
-
 function App() {
   const [cocktailsArray, setCocktailsArray] = useState<Cocktails[]>([]);
   const [updating, setUpdating] = useState(true);
   const [search, setSearch] = useState('');
-
   const FetchFunctie = async () => {
     let array = [];
     for (let i = 48; i <= 122; i++) {
