@@ -23,7 +23,7 @@ function Cocktail(props: CocktailsFunProps) {
                 <div className={styles.miniContainer} >
 
                   <div className={styles.effectContainer}>
-                    <div className={styles.imgDiv}> <img className={styles.img} src={item.strDrinkThumb} /></div>
+                    <div className={styles.imgDiv}> <img className={styles.img} src={item.strDrinkThumb}  alt=""/></div>
                     <div className={styles.middle}>  <div className={styles.text}>{item.strDrink}</div></div>
                   </div>
 

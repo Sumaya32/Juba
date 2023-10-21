@@ -8,11 +8,11 @@ const Footer = () => {
 
          <ul className={styles.socialList}>
           <li className={styles.followus}> Follow us</li>
-           <li><a href="https://www.facebook.com/" target="_blank"><img className={styles.facebook} src="/facebook_icon.png" /></a></li>
-           <li><a href="https://www.twitter.com/" target="_blank"><img className={styles.twitter} src="/twitter-icon.png" /></a></li>
-           <li><a href="https://www.instagram.com/" target="_blank" ><img className={styles.Instagram} src="/Instagram-icon.png" /></a></li>
-           <li><a href="https://www.instagram.com/" target="_blank" ><img className={styles.Instagram} src="/pinterest.png" /></a></li>
-           <li><a className={styles.activeLink}></a></li>
+           <li><a href="https://www.facebook.com/" target="_blank" rel="noreferrer nofollow"><img className={styles.facebook} src="/facebook_icon.png" alt=""/></a></li>
+           <li><a href="https://www.twitter.com/" target="_blank" rel="noreferrer nofollow"><img className={styles.twitter} src="/twitter-icon.png"  alt=""/></a></li>
+           <li><a href="https://www.instagram.com/" target="_blank" rel="noreferrer nofollow"><img className={styles.Instagram} src="/Instagram-icon.png" alt=""/></a></li>
+           <li><a href="https://www.instagram.com/" target="_blank" rel="noreferrer nofollow"><img className={styles.Instagram} src="/pinterest.png" alt=""/></a></li>
+           {/* <li><a className={styles.activeLink}></a></li> */}
          </ul>
          
         <div>

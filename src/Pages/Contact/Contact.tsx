@@ -3,7 +3,7 @@ import { useState, FormEvent } from "react";
 import emailjs from 'emailjs-com';
 
 const Contact = () => {
-    const [gender, setGender] = useState({ female: "Female", male: "Male" });
+    const [gender] = useState({ female: "Female", male: "Male" });
   
 
     const sendEmail = (e: FormEvent<HTMLFormElement>) => {
@@ -25,7 +25,7 @@ const Contact = () => {
             <div className={Styles.kleineContainer}>
                 <div className={Styles.contacContainer}>
                     <div className={Styles.map}>
-                        <iframe className={Styles.iframe} src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d450456.669649371!2d4.11813677195282!3d51.413250878284565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3f6f26326663f%3A0x9294d0a4234d731d!2sKloosterstraat%20144%2C%202000%20Antwerpen!5e0!3m2!1snl!2sbe!4v1638973843131!5m2!1snl!2sbe" loading="lazy"></iframe>
+                        <iframe className={Styles.iframe} src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d450456.669649371!2d4.11813677195282!3d51.413250878284565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3f6f26326663f%3A0x9294d0a4234d731d!2sKloosterstraat%20144%2C%202000%20Antwerpen!5e0!3m2!1snl!2sbe!4v1638973843131!5m2!1snl!2sbe" loading="lazy" title="Maps"></iframe>
                     </div>
 
                     <div className={Styles.contactInfo}>
@@ -42,7 +42,7 @@ const Contact = () => {
             <div className={Styles.kleineContainer}>
                 <div className={Styles.formulierContailner}>
 
-                    <div className={Styles.img}><img className={Styles.envelop} src="./envelop.webp" /></div>
+                    <div className={Styles.img}><img className={Styles.envelop} src="./envelop.webp" alt="Envelop"/></div>
                     <div className={Styles.formulierSmallContailner}>
                         <h1 className={Styles.h1Text}>Form</h1>
 

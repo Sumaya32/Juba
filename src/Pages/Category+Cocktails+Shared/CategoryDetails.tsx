@@ -37,7 +37,7 @@ const CategoryDetails = (props: CategoryDetailsProps) => {
     }
 
     useEffect(() => {
-        function1();   
+        function1()
     },[])
 
     return (

@@ -14,7 +14,7 @@ interface DetailProps {
 
 
 const Detail = (props: DetailProps) => {
-    const [appearance, setAppearance] = useState(true)
+    const [_, setAppearance] = useState(true)
     let { detailName } = useParams<ParamTypes>();
 
     let gevonden = props.cocktail.find(item => item.strDrink.replace(/[' ',-,%,/,.,&]/g, '').toLowerCase() === detailName.replace(/[' ',-,%,/,.,&]/g, '').toLowerCase())
@@ -76,7 +76,7 @@ const Detail = (props: DetailProps) => {
                 </div>
                 : <div style={{ color: "slategray", fontWeight: "bolder", fontSize: 25, textAlign: "center", marginBottom: 100, }}>
                     <h5>Het spijt ons er is geen info over deze drank gevonden.</h5>
-                    <img style={{ width: 80, height: 80 }} src="/sadEmoji.png" />
+                    <img style={{ width: 80, height: 80 }} src="/sadEmoji.png" alt="Sad emoji"/>
                 </div>
             }
 
