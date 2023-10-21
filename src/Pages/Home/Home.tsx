@@ -20,7 +20,7 @@ const Home = (props: HomeProps) => {
             {props.cocktail
               .filter((item, index) => index < 10)
               .map(item =>
-                <Link to={`/cocktail/${item.strDrink}`}>
+                <Link to={`/cocktail/${item.strDrink}`} key={item.strDrink}>
                   <div className={styles.miniContainer} >
                     <div className={styles.effectContainer}>
                       <div className={styles.imgDiv}><img alt={item.strDrink} className={styles.img} src={item.strDrinkThumb} /></div>
@@ -39,7 +39,7 @@ const Home = (props: HomeProps) => {
             {props.cocktail
               .filter((item, index) => index >= 10 && index < 20)
               .map(item =>
-                <Link to={`./cocktail/${item.strDrink}`}>
+                <Link to={`./cocktail/${item.strDrink}`} key={item.strDrink}>
                   <div className={styles.miniContainer} >
                     <div className={styles.effectContainer}>
                       <div className={styles.imgDiv}><img alt={item.strDrink} className={styles.img} src={item.strDrinkThumb} /></div>

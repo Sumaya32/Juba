@@ -8,7 +8,7 @@ const Header = () => {
 
       <li>
         <NavLink exact to="/" activeClassName={styles.activeLinkLogo}>
-          <img className={styles.logo} src="/eindlogo.jpg" alt="Logo" ref={"noreferrer nofollow"}/>
+          <img className={styles.logo} src="/eindlogo.jpg" alt="Logo"/>
         </NavLink>
       </li>
 

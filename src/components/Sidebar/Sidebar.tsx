@@ -18,7 +18,7 @@ const Sidebar = (props: SidebarProps) => {
     const item2 = useContext(ThemeContext);
 
     let filter = props.cocktail.find(item => item.strDrink.replace(/[ ,/,.,&]/g, '').toLowerCase() === item2.callBackValue.replace(/[ ,/,.,&]/g, '').toLowerCase())
-    console.log(item2)
+  
     return (
         <div className={styles.container}>
             <input type="search" value={item2.callBackValue} onChange={handleSearch} placeholder="Search cocktail"/>
