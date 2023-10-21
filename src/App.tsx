@@ -63,7 +63,6 @@ function App() {
                 <Route path="/category/:categoryDetailsNaam" exact> <CategoryDetails cocktail={cocktailsArray} /> </Route>
                 <Route path="/cocktail/:detailName" exact> <Detail cocktail={cocktailsArray} /> </Route>
                 <Route path="/" exact> <Home cocktail={cocktailsArray} /> </Route>
-
                 <Route path="/about"> <About /> </Route>
                 <Route path="/cocktail"> <Cocktail cocktail={cocktailsArray} /> </Route>
                 <Route path="/category"> <Category cocktail={cocktailsArray} /> </Route>
