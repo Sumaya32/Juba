@@ -2,19 +2,24 @@ import { NavLink } from "react-router-dom";
 import styles from "./Header.module.css"
 
 const Header = () => {
- 
+
   return (
     <div className={styles.header}>
 
-      <li>
+      {/* <li>
         <NavLink exact to="/" activeClassName={styles.activeLinkLogo}>
           <img className={styles.logo} src="/eindlogo.jpg" alt="Logo"/>
         </NavLink>
-      </li>
+      </li> */}
 
       <input type="checkbox" id={styles.nav_toggle} className={styles.nav_toggle} />
       <nav>
         <ul className={styles.menu}>
+        <li>
+        <NavLink exact to="/" activeClassName={styles.activeLinkLogo}>
+          <img className={styles.logo} src="/eindlogo.jpg" alt="Logo"/>
+        </NavLink>
+      </li>
           <li><NavLink exact to="/" activeClassName={styles.activeLink}>Home</NavLink></li>
           <li><NavLink exact to="/about" activeClassName={styles.activeLink}>About</NavLink></li>
           <li><NavLink exact to="/cocktail" activeClassName={styles.activeLink}>Cocktails</NavLink></li>

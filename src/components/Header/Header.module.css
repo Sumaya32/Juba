@@ -15,14 +15,22 @@ body {
   position: relative;
   z-index: 999;
   width: 100%;
+  height: 10rem;
   border-bottom: 2px solid grey;
   padding: 0px;
+  /* background-color: aqua; */
+
 }
 
 .logo {
-  margin-top: 5px;
-  width: 150px;
+  /* margin-top: 5px; */
+  /* background-color: brown; */
+  width: 130px;
   height: 70px;
+  margin-top: 10rem;
+  background-color: rgb(214, 210, 210);
+  border-radius: 20px;
+
 }
 
 
@@ -72,17 +80,22 @@ body {
 }
 
 nav {
-  position: absolute;
+  position: fixed;
+  /* position: absolute; */
   text-align: center;
-  top: 100%;
-  left: 0;
-  background: grey;
-  opacity: 0.9;
+  /* top: 100%; */
+  top: 0;
+
+  bottom: 0;
+  background: rgba(52, 51, 51, 0.8);
+  /* opacity: ; */
   width: 100%;
+  height: 100vh;
   transform: scale(1, 0);
   transform-origin: top;
   transition: transform 400ms ease-in-out;
-  background-color: red;
+  /* background-color: red; */
+  /* z-index: 1; */
 
 }
 
@@ -95,11 +108,13 @@ nav ul {
 nav li {
   margin-top: 20px;
   margin-bottom: 1em;
-  margin-left: 1em;
+  /* margin-left: 1em; */
+  /* padding: 2rem; */
 }
 
 nav a {
   color: black;
+  color: white;
   font-family: "Times New Roman", Sans-serif;
   font-weight: bold;
   text-transform: uppercase;
@@ -113,6 +128,11 @@ nav a {
 
 nav a:hover {
   color: white;
+}
+
+.activeLink{
+  font-weight: bolder;
+  border-bottom: 5px solid white;
 }
 
 .nav_toggle:checked~nav {
@@ -141,22 +161,30 @@ nav a:hover {
   }
 
   .logo {
-    grid-column: 2 / 3;
-    margin-top: 10%;
+    /* grid-column: 2 / 3; */
+    /* margin-top: 10%; */
   }
 
   nav {
-    position: relative;
+    /* position: relative; */
     text-align: left;
     transition: none;
     transform: scale(1, 1);
-    background: none;
-    top: initial;
-    left: initial;
+    /* background: none; */
+    /* top: initial;
+    left: initial; */
     grid-column: 3 / 4;
     display: flex;
-    justify-content: flex-end;
+    /* justify-content: flex-end; */
+    justify-content: center;
+    background-color: white;
+
     align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+  height: 17%;
   }
 
   nav ul {
@@ -164,13 +192,15 @@ nav a:hover {
   }
 
   nav li {
-    margin-left: 3em;
+    /* margin-left: 3em; */
     margin-bottom: 0;
+    padding: 2rem;
   }
 
   nav a {
     opacity: 1;
     position: relative;
+    color: black;
   }
 
   nav a::before {
@@ -179,11 +209,12 @@ nav a:hover {
     height: 5px;
     background: grey;
     position: absolute;
-    bottom: -.75em;
+    /* bottom: -.75em; */
     left: 0;
     right: 0;
     transform: scale(0, 1);
     transition: transform ease-in-out 250ms;
+    margin-top: -0.5rem;
   }
 
   nav a:hover::before {
@@ -217,13 +248,23 @@ nav a:hover {
 .activeLink::before {
     transform: scale(1);
   }
+
+  
+.logo {
+  /* margin-top: 5px; */
+  /* background-color: brown; */
+  width: 130px;
+  height: 70px;
+  margin-top: -1rem;
+}
+
 }
 
 
 
 @media screen and (width: 1024px) {
   nav {
-    margin-left: 20%;
+    /* margin-left: 20%; */
   }
 
 }
@@ -231,7 +272,7 @@ nav a:hover {
 
 @media screen and (width: 1125px) {
   nav {
-    margin-left: 5%;
+    /* margin-left: 5%; */
   }
 
 }

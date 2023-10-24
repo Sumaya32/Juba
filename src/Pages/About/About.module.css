@@ -1,22 +1,23 @@
-.container{
+.container {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    align-items: center;
+    /* align-items: center; */
     margin-top: 5%;
     margin-bottom: 200px;
 
 }
-.abouUsH1{
+
+.abouUsH1 {
     color: slategray;
-    font-family: "Times New Roman",Sans-serif;
+    font-family: "Times New Roman", Sans-serif;
     font-size: 29px;
     font-weight: 100;
     text-transform: uppercase;
-    letter-spacing: 4px; 
+    letter-spacing: 4px;
 }
 
-.textDiv{
+.textDiv {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -26,18 +27,18 @@
 }
 
 .abouUsText {
-    font-family: "Times New Roman",Sans-serif;
+    font-family: "Times New Roman", Sans-serif;
     color: black;
     font-size: 1.5em;
-    width: 80%;
+    width: 100%;
     text-align: left;
 }
 
-.happyFace{
+.happyFace {
     width: 20px;
 }
 
-.friends{
+.friends {
     width: 40%;
     height: 40%;
 }
@@ -52,6 +53,22 @@
         align-items: center;
         width: 98vw;
     }
+
+
+    .textDiv {
+        width: 90%;
+        margin-bottom: 1rem;
+    }
+
+    .abouUsH1 {
+        margin-top: 1rem;
+    }
+
+    .friends {
+        width: 90%;
+        height: 40%;
+    }
+
 }
 
 @media screen and (width: 1024px) {

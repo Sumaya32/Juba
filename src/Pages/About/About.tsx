@@ -13,7 +13,6 @@ function About() {
           Er is niks beter dan jouw passie als beroep uit te oefenen.
           We zijn hier om jullie vreugde en een heerlijke smaak aan te bieden.
           Word maar heel snel één van onze vrienden.<img className={styles.happyFace} src="./happy.png" alt='Happy poeple'/></p>
-
       </div>
       <img className={styles.friends} src="./vrienden.jpg" alt='A group of freinds' />
     </div>

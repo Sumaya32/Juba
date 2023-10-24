@@ -1,4 +1,4 @@
-.container{
+.container {
     margin-top: 30px;
     float: left;
     margin-left: 5px;
@@ -6,8 +6,7 @@
 
 }
 
-
-.littleContainer{
+.littleContainer {
     color: black;
     display: flex;
     flex-direction: row;
@@ -17,91 +16,81 @@
     margin-bottom: 60px;
     width: 75vw;
     height: 100%;
-
+    text-align: center;
 }
 
-
-a{
+a {
     text-decoration: none;
     color: slategrey;
     font-size: 1.2em;
 }
 
-.miniContainer{
+.miniContainer {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-right: 16px;
-    margin-bottom: 8px;
-    width: 300px;
+    width: 400px;
     min-height: 100%;
 }
 
-
-.h1Title{
+.h1Title {
     color: slategray;
-    font-family: "Times New Roman",Sans-serif;
+    font-family: "Times New Roman", Sans-serif;
     font-size: 29px;
     font-weight: 100;
     text-transform: uppercase;
     letter-spacing: 4px;
     text-align: center;
-    margin-bottom: 50px;    
     margin-right: 350px;
 }
 
-
-.img{
-    margin-bottom: 2%;
-    width: 90%;
-    height: 200px;
-    border-radius: 20px;
-    box-shadow: 5px 10px 20px rgb(32, 32, 32);
+.imgDiv {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
+.homeImg {
+    width: 90%;
+    height: 250px;
+    border-radius: 20px;
+    box-shadow: 5px 10px 20px rgb(32, 32, 32);
+    margin-bottom: 0.2rem;
+}
 
 
 /*effects*/
 .effectContainer {
     position: relative;
     width: 100%;
-  }
+}
 
-  
-  .middle {
+.middle {
     background-color: black;
     opacity: 0;
     transition: .5s ease;
-    position: absolute;
-    top: 83%;
-    left: 45%;
-    width: 91%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-100%, -100%);
-    text-align: center;
-    display: flex;
-    align-items: center;
-    border-radius: 20px;
-  }
+    border-radius: 30px;
+    margin-bottom: 1rem;
+    width: 85%;
+}
 
-  
-  .effectContainer:hover .middle {
+.effectContainer:hover .middle {
     opacity: 0.7;
-  }
-  
+}
 
-  .text {
+.text {
     color: white;
     font-size: 16px;
     padding: 16px 32px;
-    width: 100%;
-  }
+}
 
 
 /*@Media*/
-@media screen and (max-width: 804px) {
-    .container{
+@media screen and (max-width: 900px) {
+    .container {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
@@ -109,48 +98,86 @@ a{
         align-items: center;
         width: 98vw;
     }
-    
-    .kleineContainer{
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        margin-left: 6%;
-    }
 
-    .img{
-        margin-top: 50px;
+    .homeImg {
         width: 90%;
-        height: 200px;
-    }
-  
-    .middle {
-        top: 89%;
+        height: 250px;
     }
 
-    .h1Title{ 
+    .h1Title {
         margin-right: 0px;
         margin-top: 0px;
+        margin: -40rem 0 3rem 0;
+
+    }
+
+    .newestTitile {
+        margin: 0 0 0 0;
+
     }
 }
+
+
+
+@media screen and (max-width: 768px) {
+    .h1Title {
+        margin-right: 0px;
+        margin-top: 0px;
+        margin: -10rem 0 3rem 0;
+
+    }
+
+}
+
+@media screen and (max-width: 540px) {
+    .h1Title {
+        margin-right: 0px;
+        margin-top: 0px;
+        margin: -33rem 0 2rem 0;
+
+    }
+
+    .newestTitile {
+        margin: 0 0 0 0;
+
+    }
+
+}
+
 
 
 @media screen and (max-width: 414px) {
-    .container{
-   margin-left: 5%;
+    .container {
+        margin-left: 5%;
     }
-    
-    .img{
-        margin-top: 50px;
+
+    .homeImg {
         width: 70%;
         height: 200px;
-        margin-left: 17%;
+
+    }
+}
+
+@media screen and (width: 360px) {
+    .h1Title {
+
+        margin: -5rem 0 2rem 0;
+
+    }
+
+
+}
+
+@media screen and (min-width: 820px) {
+
+    .littleContainer {
+        width: 70vw;
     }
 }
 
 
-@media screen and (min-width: 820px) {
-
-    .littleContainer{
-        width: 70vw;
-    }    
+@media screen and (min-width: 900px) and (max-width: 1150px) {
+    .homeImg {
+        width: 390px;
+    }
 }

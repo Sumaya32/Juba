@@ -1,9 +1,13 @@
-html, body {
+html,
+body {
   width: 100vw;
-  }
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
 
 
-.footerContainer{
+.footerContainer {
+  /* background-color: black; */
   /* margin-bottom: 0px; */
   /* width: 98.7vw; */
   width: 100vw;
@@ -13,7 +17,7 @@ html, body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 25px; 
+  padding: 25px;
   border-top: 2px solid grey;
   text-transform: uppercase;
   /* padding-top: 6px; */
@@ -21,12 +25,12 @@ html, body {
   /* bottom: 0; */
   /* margin-top: 6px; */
   /* margin-top: 50px; */
-/* background-color: black; */
-margin: auto;
+  /* background-color: black; */
+  margin: auto;
 }
 
 
-.smallContainer{
+.smallContainer {
   width: 100%;
   flex-direction: row;
   display: flex;
@@ -34,52 +38,75 @@ margin: auto;
   align-items: center;
 }
 
-.footerminiContainer{
+.footerminiContainer {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
 }
 
-.socialList{
+.socialList {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
 
-li{
+.socialsContainer {
+  display: flex;
+  padding-left: 0.2rem
+}
+
+li {
   list-style-type: none;
 }
 
-
-.followus{
+.followus {
   color: black;
-  margin-right: 20px;
+  margin-right: 0.5rem;
 }
 
-.facebook{
-width: 35px;
+.facebook {
+  width: 35px;
 }
 
- .twitter, .Instagram{
+.twitter,
+.Instagram {
   width: 40px;
-  }
-
-.copyright{
-  border-top: 1px solid grey;
-
-font-weight: bolder;
-
 }
- 
 
-.facebook:hover, .twitter:hover, .Instagram:hover{
-    animation: blinker 1s linear infinite;
+.copyright {
+  border-top: 1px solid grey;
+  font-weight: bolder;
+}
+
+
+.facebook:hover,
+.twitter:hover,
+.Instagram:hover {
+  animation: blinker 1s linear infinite;
 }
 
 @keyframes blinker {
   50% {
     opacity: 0;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .socialList {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .socialsContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 50px);
+    align-items: center;
   }
 }
