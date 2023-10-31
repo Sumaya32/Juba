@@ -2,7 +2,7 @@ import { Cocktails } from "../../type";
 import { ThemeContext } from '../../App';
 import { useContext, ChangeEventHandler } from 'react';
 import { Link } from "react-router-dom";
-import styles from "./Zijbalk.module.css";
+import styles from "./sidebar.module.css";
 
 
 interface SidebarProps {

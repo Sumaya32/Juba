@@ -20,6 +20,7 @@ function App() {
   const [cocktailsArray, setCocktailsArray] = useState<Cocktails[]>([]);
   const [updating, setUpdating] = useState(true);
   const [search, setSearch] = useState('');
+
   const FetchFunctie = async () => {
     let array = [];
     for (let i = 48; i <= 122; i++) {
@@ -37,8 +38,6 @@ function App() {
     setCocktailsArray([...array]); 
   }
 
-  
-
   useEffect(() => {
     setUpdating(true);
     FetchFunctie();
@@ -49,7 +48,6 @@ function App() {
     <ThemeContext.Provider value={{ callBackValue: search, callBackFunction: setSearch }}>
       <Router>
         <div>
-
           <Header />
 
           {updating
@@ -57,9 +55,7 @@ function App() {
           : <div className={styles.container}>
 
               <Switch>
-
                 <Route path="/category/:categoryDetailsNaam/:detailName" exact> <Detail cocktail={cocktailsArray} /> </Route>
-
                 <Route path="/category/:categoryDetailsNaam" exact> <CategoryDetails cocktail={cocktailsArray} /> </Route>
                 <Route path="/cocktail/:detailName" exact> <Detail cocktail={cocktailsArray} /> </Route>
                 <Route path="/" exact> <Home cocktail={cocktailsArray} /> </Route>
@@ -72,6 +68,7 @@ function App() {
               </Switch>
             </div>
           }
+          
           <Footer />
         </div>
       </Router>

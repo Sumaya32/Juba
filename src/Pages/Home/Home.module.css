@@ -3,7 +3,6 @@
     float: left;
     margin-left: 5px;
     width: 98vw;
-
 }
 
 .littleContainer {
@@ -34,7 +33,7 @@ a {
     min-height: 100%;
 }
 
-.h1Title {
+.h1Title, .newestTitile {
     color: slategray;
     font-family: "Times New Roman", Sans-serif;
     font-size: 29px;
@@ -74,7 +73,7 @@ a {
     transition: .5s ease;
     border-radius: 30px;
     margin-bottom: 1rem;
-    width: 85%;
+    width: 70%;
 }
 
 .effectContainer:hover .middle {
@@ -85,6 +84,10 @@ a {
     color: white;
     font-size: 16px;
     padding: 16px 32px;
+}
+
+.newestTitile{
+    padding-bottom: 2.5rem;
 }
 
 
@@ -117,34 +120,33 @@ a {
     }
 }
 
+@media screen and (width: 820px) {
+    .h1Title {
+        margin: -51rem 0 3rem 0;
 
+    }
+}
 
 @media screen and (max-width: 768px) {
     .h1Title {
         margin-right: 0px;
         margin-top: 0px;
-        margin: -10rem 0 3rem 0;
-
+        margin: -13rem 0 3rem 0;
     }
-
 }
 
 @media screen and (max-width: 540px) {
     .h1Title {
         margin-right: 0px;
         margin-top: 0px;
-        margin: -33rem 0 2rem 0;
-
+        margin: -17rem 0 2rem 0;
     }
 
     .newestTitile {
         margin: 0 0 0 0;
-
     }
 
 }
-
-
 
 @media screen and (max-width: 414px) {
     .container {
@@ -156,16 +158,14 @@ a {
         height: 200px;
 
     }
-}
 
-@media screen and (width: 360px) {
-    .h1Title {
-
-        margin: -5rem 0 2rem 0;
-
+    .middle {
+        width: 50%;
     }
 
-
+    .h1Title {
+        margin: -13rem 0 2rem 0;
+    }
 }
 
 @media screen and (min-width: 820px) {
@@ -175,6 +175,11 @@ a {
     }
 }
 
+@media screen and (width: 280px) {
+    .h1Title {
+        margin: -13rem 0 2rem 0;
+    }
+}
 
 @media screen and (min-width: 900px) and (max-width: 1150px) {
     .homeImg {

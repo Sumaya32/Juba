@@ -36,7 +36,7 @@ const Favorites = () => {
                 <div className={styles.text}>{item.strDrink}</div>
               </div>
             </Link>
-            <div><button className={styles.btn} onClick={() => Delete(item.idDrink)}>Remove from favorites</button></div>
+            <div><button className={styles.btn}  onClick={() => Delete(item.idDrink)}>Remove from favorites</button></div>
           </div>
         ) : <div className={styles.empty}><h1>You have saved nothing yet in the favorites</h1></div>}
 

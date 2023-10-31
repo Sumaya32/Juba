@@ -63,11 +63,11 @@ input{
     }
 
     .container{
-        margin-top: 0px;
-        margin-right: 10px;
-  
-    }
+        /* margin-top: -30px;
+        margin-right: 10px; */
 
+        margin: -30px 10px -450px 0;
+    }
 }
 
 
@@ -76,7 +76,7 @@ input{
 @media screen and (max-width: 768px) {
     .container{
 
-      margin-bottom: -450px;
+      /* margin-bottom: -450px; */
   
     }
 }

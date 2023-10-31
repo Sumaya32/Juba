@@ -1,4 +1,3 @@
-import {useEffect} from "react";
 import { Cocktails } from "../../type";
 import styles from "./Home.module.css";
 import { Link } from "react-router-dom";
@@ -9,7 +8,7 @@ interface HomeProps {
 }
 
 const Home = (props: HomeProps) => {
-  
+
   return ( 
       <div className={styles.container}>
         <Sidebar cocktail={props.cocktail} />
@@ -32,7 +31,7 @@ const Home = (props: HomeProps) => {
               )}
         </div>        
    
-        <h1 className={`${styles.h1Title} ${styles.newestTitile}`}>Newest Cocktails</h1>
+        <h1 className={` ${styles.newestTitile}`}>Newest Cocktails</h1>
           <div className={styles.littleContainer}>
             {props.cocktail
               .filter((item, index) => index >= 10 && index < 20)

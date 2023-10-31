@@ -52,7 +52,7 @@ a {
 }
 
 a:hover {
-    color: skyblue;
+    /* color: skyblue; */
 }
 
 
@@ -135,6 +135,10 @@ a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.envelop {
+    width: 70%;
+    height: 300px;
 }
 
 .country {
