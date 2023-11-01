@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Loader from "./components/Loader/Loader";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import Home from "./Pages/Home/Home";
@@ -19,10 +18,12 @@ export const ThemeContext = React.createContext({ callBackValue: "Niks is gevond
 
 function App() {
   const [cocktailsArray, setCocktailsArray] = useState<Cocktails[]>([]);
-  const [updating, setUpdating] = useState(true);
+  const [updating, setUpdating] = useState(false);
   const [search, setSearch] = useState('');
 
   const FetchFunctie = async () => {
+  try {
+    setUpdating(true)
     let array = [];
     for (let i = 48; i <= 122; i++) {
       if((i >= 48 && i <= 57) || i >= 97){
@@ -34,18 +35,19 @@ function App() {
             array.push(json.drinks[j])  ;         
           }         
         }   
-      }       
+      }    
     }    
     setCocktailsArray([...array]); 
+    setUpdating(false)
+  } catch (error) {
+    setUpdating(true)
+  }
+
   }
 
   useEffect(() => {
-    setUpdating(true);
     FetchFunctie();
-    setUpdating(false);
   }, [])
-
-  // if(updating !== true){ <Loader/>; console.log("updating "+ updating)}
 
   return (
     <ThemeContext.Provider value={{ callBackValue: search, callBackFunction: setSearch }}>
