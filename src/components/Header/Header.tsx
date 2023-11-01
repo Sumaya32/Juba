@@ -3,7 +3,7 @@ import { FaBars, FaTimes } from "react-icons/fa"
 import { NavLink } from "react-router-dom"
 import styles from './header.module.css'
 
-const Header2 = () => {
+const Header = () => {
     const [toggled, setToggled] = useState(false);
 
     const toggelNavbar = () => {
@@ -41,4 +41,4 @@ const Header2 = () => {
     )
 }
 
-export default Header2
+export default Header
