@@ -1,7 +1,7 @@
 import { useState } from "react"
 import { FaBars, FaTimes } from "react-icons/fa"
 import { NavLink } from "react-router-dom"
-import styles from './header.module.css'
+import styles from './Header.module.css'
 
 const Header = () => {
     const [toggled, setToggled] = useState(false);
