@@ -21,7 +21,6 @@ const Category = (props: CategoryProps) => {
                     <div className={styles.littleContainer}>
                         {
                             uniqueCategoryArray.map((item) => {
-                                console.log("category " + item.strCategory)
                                 return (
                                     <Link to={`/category/${item.strCategory?.replace(/[' ',-,_,%,/,.,&]/g, '').toLowerCase()}`}>
                                         <div key={item.idDrink} className={styles.miniContainer}>

@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import styles from './App.module.css';
+import Loader from "./components/Loader/Loader";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import Home from "./Pages/Home/Home";
@@ -13,6 +13,7 @@ import Category from "./Pages/Category+Cocktails+Shared/Category";
 import CategoryDetails from "./Pages/Category+Cocktails+Shared/CategoryDetails";
 import Contact from "./Pages/Contact/Contact";
 import Favorites from "./Pages/Favorites/Favorites";
+import styles from './App.module.css';
 
 export const ThemeContext = React.createContext({ callBackValue: "Niks is gevonden", callBackFunction: (param: string) => { } });
 
@@ -44,10 +45,13 @@ function App() {
     setUpdating(false);
   }, [])
 
+  // if(updating !== true){ <Loader/>; console.log("updating "+ updating)}
+
   return (
     <ThemeContext.Provider value={{ callBackValue: search, callBackFunction: setSearch }}>
       <Router>
         <div>
+
           <Header />
 
           {updating

@@ -1,14 +1,15 @@
 import { Cocktails } from "../../type";
-import styles from "./Home.module.css";
 import { Link } from "react-router-dom";
 import Sidebar from "../../components/Sidebar/Sidebar";
+import Loader from "../../components/Loader/Loader";
+import styles from "./Home.module.css";
 
 interface HomeProps {
   cocktail: Cocktails[];
 }
 
 const Home = (props: HomeProps) => {
-
+// if(!props?.cocktail){ <Loader/>}
   return ( 
       <div className={styles.container}>
         <Sidebar cocktail={props.cocktail} />
