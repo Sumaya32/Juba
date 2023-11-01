@@ -56,11 +56,9 @@ h1 {
     height: 300px;
 }
 
-
 .img:hover {
     transform: scale(0.9);
 }
-
 
 .middelGrotContainer {
     display: flex;
@@ -134,6 +132,7 @@ h1 {
         margin-left: 5%;
     }
 }
+
 
 @media screen and (width: 1125px) {
     .container {

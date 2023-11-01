@@ -49,7 +49,6 @@ const CategoryDetails = (props: CategoryDetailsProps) => {
                     <h1 className={styles.h1Text}>Names of the cocktails from this category</h1>
                     {categoryDetails ?
                         categoryDetails.map((item) => {
-                            console.log("van de category " + item.strDrink)
                             return (
 
                                 <Link to={`/category/${categoryDetailsNaam}/${item.strDrink.replace(/[ ,-,%,/,.,&]/g, '')}`}>

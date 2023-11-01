@@ -53,7 +53,6 @@ function App() {
     <ThemeContext.Provider value={{ callBackValue: search, callBackFunction: setSearch }}>
       <Router>
         <div>
-
           <Header />
 
           {updating

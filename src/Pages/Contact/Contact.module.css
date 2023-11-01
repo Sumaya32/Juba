@@ -51,11 +51,6 @@ a {
     font-size: 1.2em;
 }
 
-a:hover {
-    /* color: skyblue; */
-}
-
-
 .contactInfo {
     margin-left: 20px;
     display: flex;
@@ -93,7 +88,6 @@ a:hover {
 
 
 /*Formulier*/
-
 .formulierContailner {
     display: flex;
     flex-direction: row;
@@ -113,9 +107,7 @@ a:hover {
     height: 500px;
     box-shadow: 5px 10px 20px rgb(32, 32, 32);
     border-radius: 15px;
-    /* padding: 10rem 0 8rem 0; */
 }
-
 
 .formulier {
     width: 80%;
@@ -136,6 +128,7 @@ a:hover {
     justify-content: center;
     align-items: center;
 }
+
 .envelop {
     width: 70%;
     height: 300px;
@@ -145,7 +138,6 @@ a:hover {
     width: 100px;
     margin-bottom: 0px;
 }
-
 
 input, select {
     width: 80%;
@@ -164,7 +156,6 @@ label {
     width: 80%;
 
 }
-
 
 .genderLabel {
     min-width: 500px;
@@ -301,8 +292,6 @@ label {
     }
 
 }
-
-
 
 
 @media screen and (width: 280px) {

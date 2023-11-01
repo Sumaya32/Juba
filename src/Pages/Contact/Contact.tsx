@@ -12,7 +12,6 @@ const Contact = () => {
         emailjs.sendForm('service_wjgkm9r', 'template_7biu1ed', e.currentTarget, 'user_RjyQba1NicdNC4ibWX7Bw')
             .then((result) => {
                 console.log(result);
-                console.log("e.target " + e.target);
             }, (error) => {
                 console.log(error.text);
             });
