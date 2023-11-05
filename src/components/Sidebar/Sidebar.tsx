@@ -20,8 +20,8 @@ const Sidebar = (props: SidebarProps) => {
     let filter = props.cocktail.find(item => item.strDrink.replace(/[ ,/,.,&]/g, '').toLowerCase() === item2.callBackValue.replace(/[ ,/,.,&]/g, '').toLowerCase())
   
     return (
-        <div className={styles.container}>
-            <input type="search" value={item2.callBackValue} onChange={handleSearch} placeholder="Search cocktail"/>
+        <div className={styles.sidebarContainer}>
+            <input type="search" value={item2.callBackValue} onChange={handleSearch} placeholder="Search cocktail" className={styles.searchbar}/>
 
             {filter ? props.cocktail.filter((item) => item.strDrink.toLowerCase() === item2.callBackValue.toLowerCase()).map((item) =>
 

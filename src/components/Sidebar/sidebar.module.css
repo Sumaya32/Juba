@@ -2,8 +2,7 @@ html, body{
     min-height: 100%;
 }
 
-
-.container{
+.sidebarContainer{
     margin-top: 2%;
     float: right;
     margin-right: 30px;
@@ -14,16 +13,12 @@ html, body{
     align-items: center;
 }
 
-
 .img{
-    /* margin-top: 10%; */
     width : 250px;
     height: 200px;
     border-radius: 20px;
     box-shadow: 5px 20px 20px rgb(32, 32, 32);
 }
-
-
 
 .title{
     color: slategray;
@@ -36,85 +31,38 @@ html, body{
     margin-top: 20px; 
 }
 
-
 input{
     width: 200px;
 }
 
-
 .cocktailsImg1{
-    /* margin-top: 22%; */
     margin-top: 3rem;
-
 }
+
 .cocktailsImg2{
     width: 250px;
     height: 200px;
 }
 
 
-
-
 /*@Media*/
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
+    .sidebarContainer{
+        float:none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+      margin-right: 0;
+      width: 100vw;
+    }
 
     input{
         min-width: 200px;        
     }
 
-    .container{
-        /* margin-top: -30px;
-        margin-right: 10px; */
-
-        margin: -30px 10px -450px 0;
+    .searchbar{
+        width: 30%;
     }
 }
 
-
-
-/*Extra*/
-@media screen and (max-width: 768px) {
-    .container{
-
-      /* margin-bottom: -450px; */
-  
-    }
-}
-
-
-@media screen and (max-width: 540px) {
-    .container{
-
-      margin-bottom: -100px;
-  
-    }
-}
-
-@media screen and (width: 400px) {
-    .container{
-      margin-bottom: -280px;
-    }
-}
-
-@media screen and (width: 412px) {
-    .container{
-      margin-bottom: -350px;
-    }
-}
-
-@media screen and (width: 414px) {
-    .container{
-      margin-bottom: -350px;
-    }
-}
-
-@media screen and (width: 390px) {
-    .container{
-      margin-bottom: -300px;
-    }
-}
-@media screen and (width: 393px) {
-    .container{
-      margin-bottom: -300px;
-    }
-}
